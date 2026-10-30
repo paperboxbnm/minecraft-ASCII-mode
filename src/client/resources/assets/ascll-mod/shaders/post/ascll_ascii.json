@@ -1,0 +1,26 @@
+{
+    "targets": [
+        "ascll_swap"
+    ],
+    "passes": [
+        {
+            "name": "ascll_ascii",
+            "intarget": "minecraft:main",
+            "outtarget": "ascll_swap",
+            "auxtargets": [
+                {
+                    "name": "AsciiAtlas",
+                    "id": "ascll_ascii_atlas",
+                    "width": 128,
+                    "height": 128,
+                    "bilinear": false
+                }
+            ]
+        },
+        {
+            "name": "blit",
+            "intarget": "ascll_swap",
+            "outtarget": "minecraft:main"
+        }
+    ]
+}

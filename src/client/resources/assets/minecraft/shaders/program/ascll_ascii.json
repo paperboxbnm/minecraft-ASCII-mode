@@ -1,0 +1,23 @@
+{
+    "blend": {
+        "func": "add",
+        "srcrgb": "one",
+        "dstrgb": "zero"
+    },
+    "vertex": "ascll_ascii",
+    "fragment": "ascll_ascii",
+    "attributes": [ "Position" ],
+    "samplers": [
+        { "name": "DiffuseSampler" },
+        { "name": "AsciiAtlas" }
+    ],
+    "uniforms": [
+        { "name": "ProjMat",    "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+        { "name": "OutSize",    "type": "float",     "count": 2,  "values": [ 1.0, 1.0 ] },
+        { "name": "CellHeight", "type": "float",     "count": 1,  "values": [ 12.0 ] },
+        { "name": "Aspect",     "type": "float",     "count": 1,  "values": [ 0.5 ] },
+        { "name": "MonoMix",    "type": "float",     "count": 1,  "values": [ 0.0 ] },
+        { "name": "ColorBoost", "type": "float",     "count": 1,  "values": [ 1.0 ] },
+        { "name": "Blend",      "type": "float",     "count": 1,  "values": [ 1.0 ] }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "ascll-mod",
+	"version": "${version}",
+	"name": "ASCLL mod",
+	"description": "Renders the whole game as ASCII characters with a post-processing shader: the world, entities, HUD, chat and every menu are converted into glyphs.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ascll-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.ASCLLMod"
+		],
+		"client": [
+			"com.example.client.ASCLLModClient"
+		]
+	},
+	"mixins": [
+		"ascll-mod.mixins.json",
+		{
+			"config": "ascll-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

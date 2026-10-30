@@ -1,0 +1,6 @@
+{
+	"key.ascll-mod.toggle_ascii": "Переключить ASCII-шейдер",
+	"category.ascll-mod": "ASCLL mod",
+	"ascll-mod.enabled": "ASCII-шейдер: ВКЛ",
+	"ascll-mod.disabled": "ASCII-шейдер: ВЫКЛ"
+}

@@ -1,0 +1,6 @@
+{
+	"key.ascll-mod.toggle_ascii": "Toggle ASCII shader",
+	"category.ascll-mod": "ASCLL mod",
+	"ascll-mod.enabled": "ASCII shader: ON",
+	"ascll-mod.disabled": "ASCII shader: OFF"
+}
